@@ -7,7 +7,8 @@ export default function BlogPost({ children, meta}) {
       <style dangerouslySetInnerHTML={{__html: /*css*/`
 
       article {
-        padding: 16px;
+        padding: 16px 16px 48px;
+        color: var(--main-color-d);
       }
 
       blockquote {
@@ -37,10 +38,6 @@ export default function BlogPost({ children, meta}) {
         color: #999;
       }
 
-      article {
-        color: var(--main-color-d);
-      }
-
       a {
         color: inherit;
         text-decoration: none;
@@ -51,6 +48,9 @@ export default function BlogPost({ children, meta}) {
         font-size: 2.4em;
         font-family: 'Amatic SC', cursive;
         color: var(--main-color-md);
+        margin: 0em 0 0.75em 0;
+        line-height: 1em;
+
       }
 
       figure {
@@ -60,23 +60,43 @@ export default function BlogPost({ children, meta}) {
       img {
         max-width: 100%;
       }
+      img.wide {
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+      }
 
-      #back {
+      .back {
         margin: 1em 0;
         display: inline-block;
         padding: 0.25em 0.5em;
         border-radius: 0.25em;
       }
-      #back:hover {
+      .back:hover {
         font-weight: bold;
         background-color: var(--main-color-m);
         color: var(--main-color-l);
       }
 
+      #date {
+        color: var(--main-color-md);
+        font-size: 12px;
+      }
+
       `}}></style>
       <article>
-        <Link href="/"><a id="back">Indietro</a></Link>
+        <Link href="/"><a className="back">Indietro</a></Link>
+        <br/>
+        <em id="date">{Intl.DateTimeFormat("it", {
+            hour12: false,
+            weekday: "short",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          }).format(new Date(meta.date))}</em>
         {children}
+        <br/>
+        <Link href="/"><a className="back">Indietro</a></Link>
       </article>
     </>
   )

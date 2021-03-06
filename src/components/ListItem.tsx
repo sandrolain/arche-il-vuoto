@@ -34,6 +34,10 @@ export const ListItem = ({ post }) => {
           <h3>{meta.title}</h3>
           <em>{Intl.DateTimeFormat("it", {
             hour12: false,
+            weekday: "short",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
           }).format(new Date(meta.date))}</em>
         </a>
       </Link>
