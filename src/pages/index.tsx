@@ -21,8 +21,6 @@ export default function IndexPage() {
     pages.push(i);
   }
 
-  console.log(router.query);
-
   const page = parseInt(router.query.p as string || "0", 10);
   const pagePosts = posts.slice(page * postsPerPage, (page + 1) * postsPerPage);
 
