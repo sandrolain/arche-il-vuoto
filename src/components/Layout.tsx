@@ -1,17 +1,23 @@
 import Head from "next/head";
 import Header from "./Header";
 import favicon from "./favicon.png";
+import ogImage from "./scott-szarapka-y07ClgzcVmc-unsplash.jpg";
 
 
-export default function Layout({ children, pageTitle, description }) {
+export default function Layout({ children, pageTitle, description, url }) {
   return (
     <>
       <Head>
+        <title key="title">{pageTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="Description" content={description}></meta>
+        <meta key="description" name="description" content={description}></meta>
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta key="ogtitle" property="og:title" content={pageTitle} />
+        <meta key="ogdescription" property="og:description" content={description} />
+        <meta key="ogimage" property="og:image" content={ogImage} />
         <link rel="shortcut icon" href={favicon} />
-        <title>{pageTitle}</title>
       </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Yantramanav:wght@100;400&display=swap');

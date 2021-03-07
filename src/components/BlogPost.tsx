@@ -1,9 +1,17 @@
 import hlTheme from "highlight.js/styles/tomorrow-night.css";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function BlogPost({ children, meta}) {
   return (
     <>
+      <Head>
+        <title key="title">{meta.title}</title>
+        <meta key="description" name="description" content={meta.description} />
+        <meta key="ogtitle" property="og:title"       content={meta.title} />
+        <meta key="ogdescription" property="og:description" content={meta.description} />
+        {meta.image ? <meta key="ogimage" property="og:image" content={meta.image} /> : null}
+      </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`
 
       article {
