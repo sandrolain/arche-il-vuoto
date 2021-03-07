@@ -50,7 +50,6 @@ export default function BlogPost({ children, meta}) {
         color: var(--main-color-md);
         margin: 0em 0 0.75em 0;
         line-height: 1em;
-
       }
 
       figure {
@@ -60,10 +59,25 @@ export default function BlogPost({ children, meta}) {
       img {
         max-width: 100%;
       }
-      img.wide {
+
+      #image {
+        margin: 1em 0;
+        display: flex;
+        position: relative;
+      }
+      #image img {
         object-fit: cover;
         width: 100%;
-        height: 240px;
+        height: 280px;
+      }
+      #image div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        mix-blend-mode: color;
+        background-color: var(--main-color-m);
+        opacity: 0.3;
       }
 
       .back {
@@ -79,8 +93,10 @@ export default function BlogPost({ children, meta}) {
       }
 
       #date {
+        display: block;
         color: var(--main-color-md);
         font-size: 12px;
+        margin-bottom: 1em;
       }
 
       `}}></style>
@@ -94,6 +110,10 @@ export default function BlogPost({ children, meta}) {
             month: "long",
             year: "numeric"
           }).format(new Date(meta.date))}</em>
+        {meta.image ? <div id="image">
+            <img src={meta.image} />
+            <div></div>
+          </div> : null}
         {children}
         <br/>
         <Link href="/"><a className="back">Indietro</a></Link>

@@ -47,10 +47,12 @@ export default function Layout({ children, pageTitle, description }) {
       <main>{children}</main>
       <script type="text/javascript" dangerouslySetInnerHTML={{__html: /*javascript*/`
 window.onload = function() {
-  setInterval(function() {
-    const deg = ((new Date()).getTime() % (60 * 1000) / (60 * 1000)) * 360;
-    document.body.style.setProperty("--main-color-hue", deg + "deg", "important");
-  }, 200);
+  const update = function() {
+    const deg = (((new Date()).getTime() % (60 * 1000) / (60 * 1000)) * 360) - 90;
+    document.body.style.setProperty("--main-color-hue", deg.toFixed(1) + "deg", "important");
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
 };
       `}}></script>
     </>
