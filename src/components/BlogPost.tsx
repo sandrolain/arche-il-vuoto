@@ -69,7 +69,7 @@ export default function BlogPost({ children, meta}) {
       }
 
       #image {
-        margin: 1em 0;
+        margin: 1em 0 2em;
         display: flex;
         position: relative;
       }
