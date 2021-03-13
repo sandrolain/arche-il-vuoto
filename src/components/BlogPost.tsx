@@ -78,14 +78,31 @@ export default function BlogPost({ children, meta}) {
         width: 100%;
         height: 280px;
       }
-      #image div {
+      #image-lyr {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0; left: 0;
+        z-index: 3;
         mix-blend-mode: color;
         background-color: var(--main-color-m);
         opacity: 0.3;
+        pointer-events: none;
+      }
+      #image-attr {
+        width: 100%;
+        position: absolute;
+        bottom: 0; left: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+        padding: 1em 0.5em 0.5em;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 11px;
+        color: hsl(0deg, 0%, 90%);
+      }
+      #image-attr a {
+        color: hsl(0deg, 0%, 60%);
       }
 
       .back {
@@ -120,7 +137,8 @@ export default function BlogPost({ children, meta}) {
           }).format(new Date(meta.date))}</em>
         {meta.image ? <div id="image">
             <img src={meta.image} />
-            <div></div>
+            <div id="image-lyr"></div>
+            {meta.imageAttribute ? <div id="image-attr">{meta.imageAttribute}</div> : null}
           </div> : null}
         {children}
         <br/>
