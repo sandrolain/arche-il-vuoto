@@ -15,7 +15,8 @@ export default function Header() {
           align-items: center;
           margin: 0 auto;
         }
-        header h1 {
+        header strong {
+          display: block;
           margin: 0;
           padding: 16px;
           font-family: 'Amatic SC', cursive;
@@ -25,13 +26,13 @@ export default function Header() {
           line-height: 1em;
           position: relative;
         }
-        header h1 span {
+        header strong span {
           display: block;
           font-size: 18px;
           line-height: 1em;
           letter-spacing: 0.38em;
         }
-        header h1::before {
+        header strong::before {
           content: "";
           width: 8px;
           height: 8px;
@@ -58,7 +59,7 @@ export default function Header() {
         <div>
           <div>
             <Link href="/">
-              <a><h1>ARCHÈ <span>IL VUOTO</span></h1></a>
+              <a><strong>ARCHÈ <span>IL VUOTO</span></strong></a>
             </Link>
           </div>
           <nav>
