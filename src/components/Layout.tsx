@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Header from "./Header";
 import favicon from "./favicon.png";
-import ogImage from "./scott-szarapka-y07ClgzcVmc-unsplash.jpg";
+import matrix from "./scott-szarapka-y07ClgzcVmc-unsplash.jpg";
 
 
 export default function Layout({ children, pageTitle, description, url }) {
+  const shareUrl = `https://arche.sandrolain.com${url}`;
+  const defaultOgImage = `https://arche.sandrolain.com${matrix}`;
   return (
     <>
       <Head>
@@ -12,11 +14,12 @@ export default function Layout({ children, pageTitle, description, url }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta key="description" name="description" content={description}></meta>
-        <meta property="og:url" content={url} />
+        <meta property="og:url" content={shareUrl} />
         <meta property="og:type" content="article" />
         <meta key="ogtitle" property="og:title" content={pageTitle} />
         <meta key="ogdescription" property="og:description" content={description} />
-        <meta key="ogimage" property="og:image" content={ogImage} />
+        <meta key="ogimage" property="og:image" content={defaultOgImage} />
+        <link href={shareUrl} rel="canonical" />
         <link rel="shortcut icon" href={favicon} />
       </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`

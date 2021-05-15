@@ -10,7 +10,7 @@ export default function BlogPost({ children, meta}) {
         <meta key="description" name="description" content={meta.description} />
         <meta key="ogtitle" property="og:title"       content={meta.title} />
         <meta key="ogdescription" property="og:description" content={meta.description} />
-        {meta.image ? <meta key="ogimage" property="og:image" content={meta.image} /> : null}
+        {meta.image ? <meta key="ogimage" property="og:image" content={`https://arche.sandrolain.com${meta.image}`} /> : null}
       </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`
 

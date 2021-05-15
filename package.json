@@ -1,11 +1,11 @@
 {
-  "name": "sandro-lain",
+  "name": "arche-il-vuoto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Filosofia, Psicologia, Arte, Illuminazione",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export && next-sitemap",
     "start": "next start"
   },
   "author": "Sandro Lain",
@@ -33,6 +33,7 @@
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "@types/webpack-env": "^1.16.0",
+    "next-sitemap": "^1.6.57",
     "slugify": "^1.4.7",
     "xml-js": "^1.6.11"
   }
