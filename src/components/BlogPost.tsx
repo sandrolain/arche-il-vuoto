@@ -1,14 +1,14 @@
-import hlTheme from "highlight.js/styles/tomorrow-night.css";
 import Link from "next/link";
 import Head from "next/head";
+import DProjectMenu from "./DProjectMenu";
 
-export default function BlogPost({ children, meta}) {
+export default function BlogPost({ children, meta, router }) {
   return (
     <>
       <Head>
         <title key="title">{meta.title}</title>
         <meta key="description" name="description" content={meta.description} />
-        <meta key="ogtitle" property="og:title"       content={meta.title} />
+        <meta key="ogtitle" property="og:title" content={meta.title} />
         <meta key="ogdescription" property="og:description" content={meta.description} />
         {meta.image ? <meta key="ogimage" property="og:image" content={`https://arche.sandrolain.com${meta.image}`} /> : null}
       </Head>
@@ -124,6 +124,10 @@ export default function BlogPost({ children, meta}) {
         margin-bottom: 1em;
       }
 
+      #text {
+        line-height: 1.5em;
+      }
+
       `}}></style>
       <article>
         <Link href="/"><a className="back">Indietro</a></Link>
@@ -134,13 +138,18 @@ export default function BlogPost({ children, meta}) {
             day: "numeric",
             month: "long",
             year: "numeric"
-          }).format(new Date(meta.date))}</em>
+          }).format(new Date(meta.date))}
+          {!router || router?.route.match(/\/blog\//) ? " - Blog" : ""}
+          {router?.route.match(/\/D-project\//) ? " - Progetto D" : ""}
+        </em>
         {meta.image ? <div id="image">
             <img src={meta.image} />
             <div id="image-lyr"></div>
             {meta.imageAttribute ? <div id="image-attr">{meta.imageAttribute}</div> : null}
           </div> : null}
-        {children}
+        <section id="text">
+        {router?.route.match(/D-project/) ? <DProjectMenu router={router} /> : null}
+        {children}</section>
         <br/>
         <Link href="/"><a className="back">Indietro</a></Link>
       </article>

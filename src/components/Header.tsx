@@ -1,4 +1,5 @@
 import Link from "next/link";
+import emoji from "node-emoji";
 
 export default function Header() {
   return (
@@ -7,6 +8,9 @@ export default function Header() {
         header {
           background: #000 radial-gradient(var(--main-color-md), var(--main-color-d));
           color: #FFF;
+          position:sticky;
+          top: 0;
+          z-index: 10;
         }
         header > div {
           max-width: 600px;
@@ -45,6 +49,9 @@ export default function Header() {
         }
         nav {
           padding: 16px;
+          text-align: justify;
+          line-height: 1em;
+          font-size: 14px;
         }
         a {
           text-decoration: none;
@@ -64,7 +71,7 @@ export default function Header() {
           </div>
           <nav>
             <Link href="https://www.sandrolain.com">
-              <a>I am a<br/>Developer</a>
+              <a>{emoji.emojify(":computer:")} I am a<br/>Developer</a>
             </Link>
           </nav>
         </div>

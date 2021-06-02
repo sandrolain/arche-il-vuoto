@@ -29,16 +29,19 @@ export const ListItem = ({ post }) => {
         color: var(--main-color-m);
       }
     `}</style>
-      <Link href={"/blog" + link}>
+      <Link href={link}>
         <a className="item">
           <h3>{meta.title}</h3>
+
           <em>{Intl.DateTimeFormat("it", {
             hour12: false,
             weekday: "short",
             day: "numeric",
             month: "long",
             year: "numeric"
-          }).format(new Date(meta.date))}</em>
+          }).format(new Date(meta.date))}
+          {link.match(/\/blog\//) ? " - Blog" : ""}
+          {link.match(/\/D-project\//) ? " - Progetto D" : ""}</em>
         </a>
       </Link>
     </>
