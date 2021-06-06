@@ -72,11 +72,13 @@ export default function BlogPost({ children, meta, router }) {
         margin: 1em 0 2em;
         display: flex;
         position: relative;
+        border-radius: 0.5em;
       }
       #image img {
         object-fit: cover;
         width: 100%;
         height: 280px;
+        border-radius: 0.5em;
       }
       #image-lyr {
         width: 100%;
@@ -94,12 +96,13 @@ export default function BlogPost({ children, meta, router }) {
         position: absolute;
         bottom: 0; left: 0;
         z-index: 2;
-        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
-        padding: 1em 0.5em 0.5em;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+        padding: 2em 0.5em 0.5em;
         text-align: right;
         box-sizing: border-box;
         font-size: 11px;
         color: hsl(0deg, 0%, 90%);
+        border-radius: 0.5em;
       }
       #image-attr a {
         color: hsl(0deg, 0%, 60%);
@@ -130,7 +133,7 @@ export default function BlogPost({ children, meta, router }) {
 
       `}}></style>
       <article>
-        <Link href="/"><a className="back">Indietro</a></Link>
+        <Link href="/"><a className="back">{"<"} Indietro</a></Link>
         <br/>
         <em id="date">{Intl.DateTimeFormat("it", {
             hour12: false,
@@ -151,7 +154,7 @@ export default function BlogPost({ children, meta, router }) {
         {router?.route.match(/D-project/) ? <DProjectMenu router={router} /> : null}
         {children}</section>
         <br/>
-        <Link href="/"><a className="back">Indietro</a></Link>
+        <Link href="/"><a className="back">{"<"} Indietro</a></Link>
       </article>
     </>
   )
