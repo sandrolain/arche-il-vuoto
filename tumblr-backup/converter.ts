@@ -100,7 +100,7 @@ data.tumblr.posts.post.forEach((post) => {
     image = `${post._attributes.id}.jpg`;
     body = /*html*/`
 <figure>
-  <img src={image} />
+  <img src={image.src} />
   <figcaption>${post["photo-caption"]?._text ?? ""}</figcaption>
 </figure>
     `;
@@ -108,7 +108,7 @@ data.tumblr.posts.post.forEach((post) => {
     image = `${post._attributes.id}.jpg`;
     body = /*html*/`
 <figure>
-  <img src={image} />
+  <img src={image.src} />
 </figure>
     `;
   } else if(post["link-url"]?._text) {
@@ -122,7 +122,7 @@ ${post["link-description"]._text}
   }
 
   body = body.replace(/class="[^"]+"/, "");
-  body = body.replace(/<img[^>]+src="[^>]+tumblr[^>]+"[^>]+>/, `<img src={image} />`);
+  body = body.replace(/<img[^>]+src="[^>]+tumblr[^>]+"[^>]+>/, `<img src={image.src} />`);
 
 
   const fileContent = /*javascript*/`
