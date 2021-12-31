@@ -27,6 +27,7 @@ export default function DProjectMenu ({ router }) {
         border: 1px solid var(--main-color-m);
         background-color: var(--main-color-l);
         margin: 0 0 2em 2em;
+        border-radius: 4px;
       }
       ul {
         padding-left: 1.5em;

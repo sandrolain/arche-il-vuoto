@@ -37,7 +37,7 @@ export const ListItem = ({ post }) => {
       }
     `}</style>
       <Link href={link}>
-        <a className="item" style={{"backgroundImage": `url(${meta.image})`}}>
+        <a className="item" style={{"backgroundImage": meta.image ? `url(${meta.image.src})` : null}}>
           <div className="item-cnt">
             <h3>{meta.title}</h3>
             <em>{Intl.DateTimeFormat("it", {

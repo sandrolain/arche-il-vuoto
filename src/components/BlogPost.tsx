@@ -3,6 +3,7 @@ import Head from "next/head";
 import DProjectMenu from "./DProjectMenu";
 
 export default function BlogPost({ children, meta, router }) {
+  const image = meta.image as StaticImageData;
   return (
     <>
       <Head>
@@ -10,7 +11,7 @@ export default function BlogPost({ children, meta, router }) {
         <meta key="description" name="description" content={meta.description} />
         <meta key="ogtitle" property="og:title" content={meta.title} />
         <meta key="ogdescription" property="og:description" content={meta.description} />
-        {meta.image ? <meta key="ogimage" property="og:image" content={`https://arche.sandrolain.com${meta.image}`} /> : null}
+        {image ? <meta key="ogimage" property="og:image" content={`https://arche.sandrolain.com${image.src}`} /> : null}
       </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`
 
@@ -145,8 +146,8 @@ export default function BlogPost({ children, meta, router }) {
           {!router || router?.route.match(/\/blog\//) ? " - Blog" : ""}
           {router?.route.match(/\/D-project\//) ? " - Progetto D" : ""}
         </em>
-        {meta.image ? <div id="image">
-            <img src={meta.image} />
+        {image ? <div id="image">
+            <img src={image.src} />
             <div id="image-lyr"></div>
             {meta.imageAttribute ? <div id="image-attr">{meta.imageAttribute}</div> : null}
           </div> : null}

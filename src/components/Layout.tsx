@@ -3,7 +3,6 @@ import Header from "./Header";
 import favicon from "./favicon.png";
 import matrix from "./scott-szarapka-y07ClgzcVmc-unsplash.jpg";
 
-
 export default function Layout({ children, pageTitle, description, url }) {
   const shareUrl = `https://arche.sandrolain.com${url}`;
   const defaultOgImage = `https://arche.sandrolain.com${matrix}`;
@@ -20,7 +19,7 @@ export default function Layout({ children, pageTitle, description, url }) {
         <meta key="ogdescription" property="og:description" content={description} />
         <meta key="ogimage" property="og:image" content={defaultOgImage} />
         <link href={shareUrl} rel="canonical" />
-        <link rel="shortcut icon" href={favicon} />
+        <link rel="shortcut icon" href={favicon.src} />
       </Head>
       <style dangerouslySetInnerHTML={{__html: /*css*/`
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Yantramanav:wght@100;400&display=swap');
@@ -64,6 +63,14 @@ document.addEventListener("DOMContentLoaded", function() {
   requestAnimationFrame(update);
 });
       `}}></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWDLFM6YFG"></script>
+      <script type="text/javascript" dangerouslySetInnerHTML={{__html: /*javascript*/`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QWDLFM6YFG');
+        `}}></script>
     </>
   );
 }
