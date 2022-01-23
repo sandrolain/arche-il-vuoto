@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import DProjectMenu from "./DProjectMenu";
+import MateriatMenu from "./MateriaMenu";
 
 export default function BlogPost({ children, meta, router }) {
   const image = meta.image as StaticImageData;
@@ -153,6 +154,7 @@ export default function BlogPost({ children, meta, router }) {
           </div> : null}
         <section id="text">
         {router?.route.match(/D-project/) ? <DProjectMenu router={router} /> : null}
+        {router?.route.match(/materia\//) ? <MateriatMenu router={router} /> : null}
         {children}</section>
         <br/>
         <Link href="/"><a className="back">{"<"} Indietro</a></Link>

@@ -1,0 +1,17 @@
+import BlogPost from "../../components/BlogPost"
+import image from "./images/PO01-principio.jpg"
+
+export const meta = {
+  title: "PO01 - Principio",
+  description: "Pastelli ad Olio",
+  date: "2022-01-23T13:17:37Z",
+  listimage: image
+}
+
+export default ({ children, router }) => <BlogPost meta={meta} router={router}>{children}</BlogPost>;
+
+# PO01 - Principio
+
+*Pastelli ad olio - Tecnica base - Polpastrelli*
+
+<img src={image.src} />

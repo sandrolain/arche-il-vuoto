@@ -2,6 +2,7 @@ import Link from "next/link"
 
 export const ListItem = ({ post }) => {
   const { link, module: { meta }, } = post
+  const image = meta.listimage ?? meta.image;
   return (
     <>
     <style jsx>{/*css*/`
@@ -37,7 +38,7 @@ export const ListItem = ({ post }) => {
       }
     `}</style>
       <Link href={link}>
-        <a className="item" style={{"backgroundImage": meta.image ? `url(${meta.image.src})` : null}}>
+        <a className="item" style={{"backgroundImage": image ? `url(${image.src})` : null}}>
           <div className="item-cnt">
             <h3>{meta.title}</h3>
             <em>{Intl.DateTimeFormat("it", {
