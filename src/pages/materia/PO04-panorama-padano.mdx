@@ -1,0 +1,17 @@
+import BlogPost from "../../components/BlogPost"
+import image from "./images/PO04-panorama-padano.jpg"
+
+export const meta = {
+  title: "PO04 - Panorama Padano",
+  description: "Pastelli ad Olio",
+  date: "2022-01-30T13:23:06Z",
+  listimage: image
+}
+
+export default ({ children, router }) => <BlogPost meta={meta} router={router}>{children}</BlogPost>;
+
+# PO04 - Panorama Padano
+
+*Pastelli ad olio - Sfumatura ad olio - Polpastrelli*
+
+<img src={image.src} />
