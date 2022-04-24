@@ -1,10 +1,30 @@
 import Link from "next/link";
 import Head from "next/head";
 import DProjectMenu from "./DProjectMenu";
-import MateriatMenu from "./MateriaMenu";
+import MateriaMenu from "./MateriaMenu";
+import { ReactNode } from "react";
+import { Router } from "next/router";
+import { StaticImageData } from "next/image";
+import CucinaMenu from "./CucinaMenu";
 
-export default function BlogPost({ children, meta, router }) {
-  const image = meta.image as StaticImageData;
+export type Meta = {
+  title?: string;
+  description?: string;
+  date?: string;
+  listimage?: StaticImageData;
+  image?: StaticImageData;
+  imageAttribute?: ReactNode;
+}
+
+export type BlogPostAttrs = {
+  children: ReactNode,
+  meta: Meta,
+  router: Router
+  showtitle?: boolean;
+}
+
+export default function BlogPost({ children, meta, router, showtitle }: BlogPostAttrs) {
+  const image = meta.image;
   return (
     <>
       <Head>
@@ -153,8 +173,10 @@ export default function BlogPost({ children, meta, router }) {
             {meta.imageAttribute ? <div id="image-attr">{meta.imageAttribute}</div> : null}
           </div> : null}
         <section id="text">
-        {router?.route.match(/D-project/) ? <DProjectMenu router={router} /> : null}
-        {router?.route.match(/materia\//) ? <MateriatMenu router={router} /> : null}
+        {router?.route.match(/D\-project/) ? <DProjectMenu router={router} /> : null}
+        {router?.route.match(/materia\//) ? <MateriaMenu router={router} /> : null}
+        {router?.route.match(/in-cucina\//) ? <CucinaMenu router={router} /> : null}
+        {showtitle ? <h1>{meta.title}</h1> : null}
         {children}</section>
         <br/>
         <Link href="/"><a className="back">{"<"} Indietro</a></Link>

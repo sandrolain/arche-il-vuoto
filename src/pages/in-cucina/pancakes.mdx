@@ -1,0 +1,30 @@
+import BlogPost from "../../components/BlogPost"
+import image from "./images/pancakes.jpg"
+
+export const meta = {
+  title: "Pancakes",
+  description: "La nostra colazione del sabato",
+  date: "2022-04-24T12:48:05Z",
+  image: image
+}
+
+export default ({ children, router }) => <BlogPost showtitle meta={meta} router={router}>{children}</BlogPost>;
+
+## Ingredienti
+
+- 2 uova :egg:
+- 210 g di latte :glass_of_milk:
+- 200 g fi farina 00
+- 25 g olio di semi
+- 40 g di zucchero
+- 1 bustina lievito per dolci
+
+Sbattere le uova con sbattitore massima potenza finché non diventano liquide ed uniformi.  
+Aggiungere latte e olio e sbattere fino ad amalgamare.  
+Aggiungere farina, zucchero e lievito e sbattere fino ad amalgamare.  
+
+Versare una quantità di impasto secondo la dimensione desiderata su padella calda con fuoco medio.  
+Cuocere per circa 50 secondi per lato.  
+Ripetere fino a finire l'impasto.
+
+

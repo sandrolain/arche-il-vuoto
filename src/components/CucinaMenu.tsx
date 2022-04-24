@@ -1,9 +1,9 @@
 import { posts } from "../getAllPosts";
 import Link from "next/link"
 
-export default function MateriaMenu ({ router }) {
+export default function CucinaMenu ({ router }) {
   const projPosts = posts.filter((post) => {
-    return post.link.match(/materia\//) && (post.link != router.route);
+    return post.link.match(/in\-cucina\//) && (post.link != router.route);
   });
   projPosts.sort((postA, postB) => {
     const dateA = postA.module.meta.date;
@@ -37,7 +37,7 @@ export default function MateriaMenu ({ router }) {
       }
     `}</style>
     <aside>
-      Questo contenuto<br/>fa parte della serie artistica <em>Materia</em>.<br/>
+      Questo contenuto<br/>fa parte della serie lifestyle <em>In Cucina</em>.<br/>
       Altri contenuti della serie:
       <nav><ul>
       {projPosts.map((post) => {
