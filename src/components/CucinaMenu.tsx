@@ -42,7 +42,7 @@ export default function CucinaMenu ({ router }) {
       <nav><ul>
       {projPosts.map((post) => {
         const { link, module: { meta }, } = post
-        return <li key={link}><Link href={link}><a>{meta.title}</a></Link></li>;
+        return <li key={link}><Link href={link}>{meta.title}</Link></li>;
       })}
       </ul>
       </nav>

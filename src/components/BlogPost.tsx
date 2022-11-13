@@ -155,7 +155,7 @@ export default function BlogPost({ children, meta, router, showtitle }: BlogPost
 
       `}}></style>
       <article>
-        <Link href="/"><a className="back">{"<"} Indietro</a></Link>
+        <Link href="/" className="back">{"<"} Indietro</Link>
         <br/>
         <em id="date">{Intl.DateTimeFormat("it", {
             hour12: false,
@@ -179,7 +179,7 @@ export default function BlogPost({ children, meta, router, showtitle }: BlogPost
         {showtitle ? <h1>{meta.title}</h1> : null}
         {children}</section>
         <br/>
-        <Link href="/"><a className="back">{"<"} Indietro</a></Link>
+        <Link href="/" className="back">{"<"} Indietro</Link>
       </article>
     </>
   )

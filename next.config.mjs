@@ -8,14 +8,16 @@ import mdx             from "@next/mdx"
 const withMDX = mdx({
   extension: /\.mdx?$/,
   options: {
+    providerImportSource: '@mdx-js/react',
     remarkPlugins: [images, [emoji, { emoticon: true }]],
     rehypePlugins: [highlight]
   }
 });
 
-const config = withPlugins([
-  [withMDX, { pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"] }],
-  //[optimizedImages, { inlineImageLimit: 0 }]
-]);
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-export default config;
+export default async (phase, { defaultConfig }) =>
+  withPlugins([withMDX], nextConfig)(phase, { ...defaultConfig, ...nextConfig });

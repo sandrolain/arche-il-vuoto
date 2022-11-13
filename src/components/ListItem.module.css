@@ -1,0 +1,28 @@
+.item {
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.itemCnt {
+  border-radius: 0.26em;
+  background: linear-gradient(90deg, hsla(var(--main-color-hue), 20%, 90%, 0.9), hsla(var(--main-color-hue), 20%, 90%, 0.9), hsla(var(--main-color-hue), 20%, 90%, 0.5));
+  padding: 0.5em 1em;
+}
+.item:hover .itemCnt {
+  background: linear-gradient(90deg, hsla(var(--main-color-hue), 20%, 90%, 1), hsla(var(--main-color-hue), 20%, 90%, 0));
+}
+.item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: var(--main-color-md);
+}
+.item em {
+  font-size: 0.8em;
+  line-height: 1em;
+  color: var(--main-color-m);
+}

@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 0;
+}
+.pagination a {
+  display: block;
+  padding: 0.25em 0.5em;
+  line-height: 1em;
+  color: var(--main-color-m);
+  text-decoration: none;
+  border-radius: 0.25em;
+}
+.pagination a.active {
+  font-weight: bold;
+  background-color: var(--main-color-l);
+}
+.pagination a:hover {
+  font-weight: bold;
+  background-color: var(--main-color-m);
+  color: var(--main-color-l);
+}
