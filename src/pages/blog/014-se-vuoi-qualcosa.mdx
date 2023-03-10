@@ -1,0 +1,17 @@
+import BlogPost from "../../components/BlogPost"
+import image from "./images/christian-lue-qUrIIzSWhh8-unsplash.jpg";
+
+export const meta = {
+  title: "Se vuoi qualcosa",
+  description: "devi fare qualcosa",
+  date: "2023-03-10T19:29:31Z",
+  image,
+  imageAttribute: <>Foto di <a href="https://unsplash.com/ja/@christianlue?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian Lue</a> su <a href="https://unsplash.com/it/foto/qUrIIzSWhh8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></>
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+“Se vuoi qualcosa che non hai mai avuto,  
+devi fare qualcosa che non hai mai fatto.”
+
+*Thomas Jefferson*
