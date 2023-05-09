@@ -1,0 +1,18 @@
+import BlogPost from "../../components/BlogPost"
+import image from "./images/dingzeyu-li-ie8WW5KUx3o-unsplash.jpg";
+
+export const meta = {
+  title: "In pace",
+  description: "nel presente",
+  date: "2023-05-09T18:37:19Z",
+  image,
+  imageAttribute: <>Foto di <a href="https://unsplash.com/@dingzeyuli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dingzeyu Li</a> su <a href="https://unsplash.com/it/foto/ie8WW5KUx3o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></>
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+"Se sei depresso stai vivendo nel passato.  
+Se sei ansioso, stai vivendo nel futuro.  
+Sei sei in pace, stai vivendo nel presente."
+
+*Lao Tzu+
