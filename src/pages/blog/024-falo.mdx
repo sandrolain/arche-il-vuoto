@@ -1,0 +1,21 @@
+import BlogPost from "../../components/BlogPost";
+import image from "./images/tengyart-OEUDX2oT8hU-unsplash.jpg";
+
+export const meta = {
+  title: "Falò",
+  description: "Ci proverò",
+  date: "2025-12-20T12:00:00Z",
+  image,
+  imageAttribute: (
+    <>Foto di <a href="https://unsplash.com/it/@tengyart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Олег Мороз</a> su <a href="https://unsplash.com/it/foto/falo-di-notte-OEUDX2oT8hU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></>
+  ),
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+# Falò
+
+Ti sentivo come il falò quando si spegne.  
+Forse riesco a riaccenderti.  
+Ci proverò.
+
