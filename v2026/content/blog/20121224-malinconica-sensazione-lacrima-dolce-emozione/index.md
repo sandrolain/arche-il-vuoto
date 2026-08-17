@@ -1,0 +1,29 @@
+---
+title: " Malinconica sensazione, Lacrima, dolce emozione."
+date: 2012-12-24T17:17:00.000Z
+---
+
+#  Malinconica sensazione, Lacrima, dolce emozione.
+
+<blockquote>
+  <p>Malinconica sensazione,<br/>
+Lacrima, dolce emozione.<br/>
+De, la gioia infinita,<br/>
+Purpurea è la vita.</p>
+
+<p>Non soddisfa, il Cosmo,<br/>
+a crescere gli Astri e le Stelle.<br/>
+In avvincere soddisfazioni,<br/>
+si bisogna delle compagnie più belle.</p>
+
+<p>La Sostanza non basta,<br/>
+a riscattare il passato,<br/>
+o l'Immagine e la Casta,<br/>
+a dar valore al Creato.</p>
+
+<p>Elegante la creanza,<br/>
+Ferma la costanza.<br/>
+Dama dell'esistenza<br/>
+la scelta Romanza.</p>
+  <em>24/12/2008</em>
+</blockquote>

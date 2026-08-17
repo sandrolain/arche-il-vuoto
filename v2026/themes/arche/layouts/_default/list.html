@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="section-list">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    {{ partial "list-item.html" . }}
+  {{ end }}
+</section>
+{{ end }}

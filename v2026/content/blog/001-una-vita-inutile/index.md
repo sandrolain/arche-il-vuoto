@@ -1,0 +1,22 @@
+---
+title: "Una vita inutile"
+date: 2021-03-06T12:52:52Z
+description: "A volte sembra di aver vissuto una vita inutile."
+image: "images/hans-eiskonen-PotGJdsW06k-unsplash.jpg"
+---
+
+# Una vita inutile
+
+A volte sembra di aver vissuto una vita inutile.
+
+Ma la vita che ho vissuto mi ha portato fino a qui, sebbene ci siano state alcune cose brutte, c'è n'è sono state altre di belle.
+
+Se avessi avuto un'altra vita avrei avuto altre cose belle e brutte.
+
+Chissà cosa avrei fatto, chissà chi avrei conosciuto!
+
+Non è che voglia aver vissuto un'altra vita al posto di questa, in realtà vorrei averle vissute tutte le vite possibili.
+
+La mia è un'invidia patologica, invidio chi sta meglio ed invidio chi sta peggio.
+
+Sono un contenitore vuoto delle esperienze che non ha provato.

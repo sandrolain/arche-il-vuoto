@@ -1,0 +1,29 @@
+---
+title: "Vedi la musica?"
+date: 2024-01-19T20:22:36Z
+description: "Appena dietro il velo di realtà"
+image: "images/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg"
+imageattribute: "Foto di <a href=\"https://unsplash.com/it/@lorenzospoleti?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Lorenzo Spoleti</a> su <a href=\"https://unsplash.com/it/foto/nota-musicale-su-pianoforte-marrone-MlhJNEUQpBs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>"
+---
+
+# Vedi la musica?
+
+La sinfonia degli eventi,  
+l’armonia in ogni dove,  
+Suono e canto dell’universo,  
+Voce e luce del creato.
+
+Nota dopo nota, causa ed effetto,  
+Ed Effetto che diviene causa,  
+Infinite pagine di uno spartito,  
+Suona l’eterna l’orchestra.
+
+Con l’occhio dell’anima potrai vedere  
+I fili che muovono gli strumenti,  
+Appena dietro il velo di realtà  
+Che separa il materiale dall’immateriale
+
+E quando vedrai potrai danzare,  
+danzare, danzare, passo dopo passo,  
+quella musica, che ora si rivela.  
+È la verità che è sempre stata con te.

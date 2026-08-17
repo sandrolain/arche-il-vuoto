@@ -1,0 +1,11 @@
+---
+title: "Da ognuno secondo le proprie capacità, a ognuno"
+date: 2013-10-18T20:23:47.000Z
+---
+
+# Da ognuno secondo le proprie capacità, a ognuno
+
+<blockquote>
+  <p>da ognuno secondo le proprie capacità, a ognuno secondo i propri bisogni</p>
+  <em><em>Marx</em></em>
+</blockquote>

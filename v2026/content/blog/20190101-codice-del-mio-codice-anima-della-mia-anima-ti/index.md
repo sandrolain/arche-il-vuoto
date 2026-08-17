@@ -1,0 +1,11 @@
+---
+title: "Codice del mio codice"
+date: 2019-01-01T13:43:15.000Z
+image: "images/181611619751.jpg"
+---
+
+# Codice del mio codice
+
+{{< figure src="/images/181611619751.jpg" >}}
+
+Codice del mio codice.<p>Anima della mia anima.</p><p>Ti custodirò piccola gemma di petali delicati,</p><p>se vorrai crescere come un fiore tra le mie mani.</p><p>Ti accompagnerò nei tuoi sentieri inesplorati,</p><p>se vorrai affrontarli assieme a me un domani.</p><p>Imparerò da te più di quello che potrò insegnarti,</p><p>più di ogni cosa bella o brutta che avrò da mostrarti.</p><p>Vincerò la paura che per te avrò in ogni secondo,</p><p>sarai la mia più grande forza in questo mondo.</p><p>Ti ho pensata, immaginata e vissuta,</p><p>di mille forme, suoni e colori nella mia mente.</p><p>So già che sarai, quando ti avrò conosciuta,</p><p>di un numero infinito di sfumature differente.</p><p>Ti abbiamo da sempre aspettata,</p><p>Ti abbiamo intensamente voluta.</p><p>Al di la di ogni paura, difficolta o caduta,</p><p>Dolcemente ascoltata, cullata e baciata.</p><p>Ora studio, penso, sogno e scrivo</p><p>Matita che disegna, Matita che scrive</p><p>Ora ti ascolto, accarezzo, aspetto e vivo</p><p>Matita che respira, Matita che vive.</p><p>Piccola, immensa, unica bimba mia,</p><p>Aspettarti è come una misteriosa melodia,</p><p>Composta con un po’ di timore ed un po’ di magia,</p><p>Che suona ogni giorno di nuova prosa, di nuova poesia</p>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="post-list">
+  {{ $paginator := .Paginator }}
+  {{ range $paginator.Pages }}
+    {{ partial "list-item.html" . }}
+  {{ end }}
+</section>
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}" class="pagination-link">&laquo; Precedente</a>
+  {{ end }}
+  <span class="pagination-info">Pagina {{ $paginator.PageNumber }} di {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}" class="pagination-link">Successiva &raquo;</a>
+  {{ end }}
+</nav>
+{{ end }}
+{{ end }}

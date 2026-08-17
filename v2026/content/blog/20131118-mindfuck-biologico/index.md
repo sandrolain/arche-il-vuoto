@@ -1,0 +1,11 @@
+---
+title: "Mindfuck biologico"
+date: 2013-11-18T07:19:04.000Z
+---
+
+# Mindfuck biologico
+
+<p><a  href="http://zerodx.tumblr.com/post/67293593663/mindfuck-biologico">zerodx</a>:</p>
+<blockquote>
+<p>Questa cosa la devo scrivere che poi me la scordo. In questi giorni mi sono girato a più riprese l’immenso Natural History Museum di Londra, e non l’ho ancora visto tutto. Ero finito in una sezione che parla della biologia umana, e lì uno schermo con dei seggiolini rossi fa vedere ai visitatori&hellip;</p>
+</blockquote>

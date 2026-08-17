@@ -1,0 +1,33 @@
+---
+title: " Divergevano due strade in un bosco Ingiallito, e"
+date: 2013-09-29T19:09:17.000Z
+---
+
+#  Divergevano due strade in un bosco Ingiallito, e
+
+<blockquote>
+  <p>Divergevano due strade in un bosco<br/>
+Ingiallito, e spiacente di non poterle fare<br/>
+Entrambe essendo un solo, a lungo mi fermai<br/>
+Una di esse finchè potevo scrutando<br/>
+Là dove in mezzo agli arbusti svoltava.</p>
+
+<p>Poi, presi l’altra, che era buona ugualmente<br/>
+E aveva forse i titoli migliori<br/>
+Perché era erbosa e poco segnata sembrava;<br/>
+Benchè, in fondo, il passare della gente<br/>
+Le avesse davvero segnate più o meno lo stesso,</p>
+
+<p>Perché nessuna in quella mattina mostrava<br/>
+Sui fili d’erba l’impronta nera d’un passo.<br/>
+Oh, quell’altra lasciavo a un altro giorno !<br/>
+Pure, sapendo bene che strada porta a strada,<br/>
+Dubitavo se mai sarei tornato.</p>
+
+<p>Questa storia racconterò con un sospiro<br/>
+Chissà dove tra molto tempo:<br/>
+Divergevano due strade in un bosco, e io…..<br/>
+Io presi la meno battuta,<br/>
+E di qui tutta la differenza è venuta.</p>
+  <em><strong>La strada non presa, </strong><em>Robert Frost</em></em>
+</blockquote>

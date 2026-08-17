@@ -1,0 +1,10 @@
+<a href="{{ .RelPermalink }}" class="list-item"{{ with .Params.image }} style="background-image:url('{{ . | absURL }}')"{{ end }}>
+  <div class="list-item-overlay">
+    <h3>{{ .Title }}</h3>
+    <span class="list-item-date">
+      {{- .Date.Format "02/01/2006" -}}
+      {{- if eq .Section "blog" }} - Blog{{ end -}}
+      {{- if eq .Section "D-project" }} - Progetto D{{ end -}}
+    </span>
+  </div>
+</a>

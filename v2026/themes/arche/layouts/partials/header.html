@@ -1,0 +1,19 @@
+<header>
+  <div class="header-inner">
+    <a href="{{ relURL "/" }}" class="logo-link">
+      <strong>ARCHÈ <span>IL VUOTO</span></strong>
+    </a>
+  </div>
+  <nav class="section-nav">
+    <div class="section-nav-inner">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambia tema" title="Tema: Sistema / Chiaro / Scuro">
+        <span class="theme-toggle-system">◐</span>
+        <span class="theme-toggle-light">☀</span>
+        <span class="theme-toggle-dark">☾</span>
+      </button>
+    </div>
+  </nav>
+</header>

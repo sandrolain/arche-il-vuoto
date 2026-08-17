@@ -1,0 +1,11 @@
+---
+title: "Non si tratta di sapere se la pace perpetua sia"
+date: 2013-10-09T19:05:48.000Z
+---
+
+# Non si tratta di sapere se la pace perpetua sia
+
+<blockquote>
+  <p>Non si tratta di sapere se la pace perpetua sia una cosa reale o un non senso, e se noi non ci inganniamo nel nostro giudizio teorico, quando accettiamo il primo caso. Noi dobbiamo agire sul fondamento di essa, come se la cosa fosse possibile.</p>
+  <em><strong>Metafisica dei costumi</strong>, <em>Kant</em></em>
+</blockquote>

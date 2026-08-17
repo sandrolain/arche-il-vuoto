@@ -1,0 +1,20 @@
+---
+title: "“E’ un amore impossibile” - mi dici. “E’ un amore"
+date: 2014-07-12T12:48:14.000Z
+---
+
+# “E’ un amore impossibile” - mi dici. “E’ un amore
+
+<blockquote>
+  “E’ un amore impossibile” - mi dici.<br/>
+“E’ un amore impossibile” - ti dico.  <br/>
+Ma scopri che sorridi se mi guardi,  <br/>
+e scopro che sorrido se ti vedo.  <br/>
+“Di notte” – tu confessi – “io ti penso… Ti penso giorno e notte, e mi domando se stai pensando a me, mentre ti penso.  <br/>
+… La società, le regole, i doveri… ma tremi quando stringo le tue mani.”  <br/>
+“Meglio felici o meglio allineati?” -ti chiedo.-  <br/> 
+E il tuo sorriso accende il giorno, cambiando veste ad ogni mio pensiero.  <br/>
+“Questo amore è possibile” - ti dico.  <br/>
+“Questo amore è possibile” - mi dici.<br/>
+  <em>Sesto Aurelio Properzio, Assisi, circa 47 a.C. – Roma, 14 a.C.</em>
+</blockquote>

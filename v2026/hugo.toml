@@ -1,0 +1,55 @@
+baseURL = "https://arche.sandrolain.com"
+locale = "it"
+title = "Archè - Il Vuoto"
+theme = "arche"
+summaryLength = 0
+paginate = 10
+enableEmoji = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+[params]
+  description = "Filosofia, Psicologia, Arte, Poesia"
+  author = "Sandro Lain"
+  mainColorHue = "24deg"
+  defaultOGImage = "og-default.jpg"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "Progetto D"
+    url = "/D-project/"
+    weight = 2
+  [[menu.main]]
+    name = "Materia"
+    url = "/materia/"
+    weight = 3
+  [[menu.main]]
+    name = "In Cucina"
+    url = "/in-cucina/"
+    weight = 4
+  [[menu.main]]
+    name = "Chi Sono"
+    url = "/chi-sono/"
+    weight = 5
+  [[menu.main]]
+    name = "Cerca"
+    url = "/cerca/"
+    weight = 6
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]

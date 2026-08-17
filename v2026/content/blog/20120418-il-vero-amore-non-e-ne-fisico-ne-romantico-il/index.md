@@ -1,0 +1,14 @@
+---
+title: "Il vero amore non è né fisico né romantico. Il"
+date: 2012-04-18T14:21:28.000Z
+---
+
+# Il vero amore non è né fisico né romantico. Il
+
+<blockquote>
+  <p>Il vero amore non è né fisico né romantico.<br/>
+Il vero amore è l'accettazione di tutto ciò che è, è stato, sarà e non sarà.<br/>
+Le persone più felici non sono necessariamente coloro che hanno il meglio di tutto, ma coloro che traggono il meglio da ciò che hanno.<br/>
+La vita non è una questione di come sopravvivere alla tempesta, ma di come danzare nella pioggia!</p>
+  <em>Kahlil Gibran</em>
+</blockquote>

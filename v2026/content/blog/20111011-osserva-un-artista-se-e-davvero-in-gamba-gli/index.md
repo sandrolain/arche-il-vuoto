@@ -1,0 +1,13 @@
+---
+title: " Osserva un artista, se è davvero in gamba, gli"
+date: 2011-10-11T19:22:00.000Z
+---
+
+#  Osserva un artista, se è davvero in gamba, gli
+
+<blockquote>
+  <p>Osserva un artista, se è davvero in gamba, gli capita sempre prima o poi di arrivare al punto in cui potrebbe fare un unica cosa per il resto della vita, e per tutto il mondo esterno continuerebbe ad avere successo ma non avrebbe successo per se stesso.</p>
+
+<p>Quello è il momento in cui si vede davvero chi è, se si mette in gioco rischiando il fallimento, è ancora un artista.</p>
+  <em>Steve Jobs</em>
+</blockquote>

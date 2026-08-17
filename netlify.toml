@@ -1,5 +1,16 @@
-[[plugins]]
-package = "netlify-plugin-cache-nextjs"
+[build]
+  base = "v2026/"
+  command = "hugo --minify"
+  publish = "public"
 
 [build.environment]
-NODE_VERSION = "14"
+  GO_VERSION = "1.26.6"
+  HUGO_VERSION = "0.165.0"
+  HUGO_ENV = "production"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

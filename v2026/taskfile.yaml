@@ -1,0 +1,18 @@
+version: "3"
+tasks:
+  setup:
+    cmds:
+      - mkdir -p vale/styles
+      - vale sync
+  serve:
+    cmds:
+      - hugo server --disableFastRender
+    desc: Run Hugo server
+  dev:
+    cmds:
+      - hugo server --buildDrafts --disableFastRender --buildFuture
+    desc: Run Hugo server with drafts and disable fast render
+  clean:
+    cmds:
+      - rm -rf public
+    desc: Clean up the public directory

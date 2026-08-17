@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# Build
+public/
+.hugo_build.lock
+
+# Other
+temp/
+refs/

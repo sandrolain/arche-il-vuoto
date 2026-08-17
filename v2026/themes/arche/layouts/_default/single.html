@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article class="post">
+  <a href="{{ relURL "/" }}" class="back-link">&laquo; Indietro</a>
+
+  <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ .Date.Format "02/01/2006" }}
+    {{- if eq .Section "blog" }} - Blog{{ end -}}
+    {{- if eq .Section "D-project" }} - Progetto D{{ end -}}
+  </time>
+
+  {{- with .Params.image }}
+  <figure class="post-hero">
+    <img src="{{ . | absURL }}" alt="{{ $.Title }}" loading="lazy">
+    {{- with $.Params.imageattribute }}
+    <figcaption class="image-credit">{{ . | safeHTML }}</figcaption>
+    {{- end }}
+  </figure>
+  {{- end }}
+
+  {{- if and (or (eq .Section "materia") (eq .Section "in-cucina")) .Params.showtitle }}
+  <h1>{{ .Title }}</h1>
+  {{- end }}
+
+  {{/* Sidebar for categorized posts */}}
+  {{- if or (eq .Section "D-project") (eq .Section "materia") (eq .Section "in-cucina") }}
+  <aside class="post-sidebar">
+    {{- if eq .Section "D-project" }}
+    <p>Questo contenuto fa parte del mio <em>Progetto D</em>. Altri contenuti della serie:</p>
+    {{- else if eq .Section "materia" }}
+    <p>Questo contenuto fa parte della serie <em>Materia</em>. Altri contenuti della serie:</p>
+    {{- else if eq .Section "in-cucina" }}
+    <p>Questo contenuto fa parte della serie <em>In Cucina</em>. Altri contenuti della serie:</p>
+    {{- end }}
+    <ul>
+      {{- range where .Site.RegularPages "Section" .Section }}
+        {{- if ne .RelPermalink $.RelPermalink }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </aside>
+  {{- end }}
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

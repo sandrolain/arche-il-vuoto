@@ -1,0 +1,11 @@
+---
+title: "L'imperfezione è bellezza, la pazzia è genialità,"
+date: 2015-02-13T09:45:19.000Z
+---
+
+# L'imperfezione è bellezza, la pazzia è genialità,
+
+<blockquote>
+  <p>L'imperfezione è bellezza, la pazzia è genialità, ed è meglio essere assolutamente ridicoli che assolutamente noiosi.</p>
+  <em><i>Marilyn Monroe</i></em>
+</blockquote>

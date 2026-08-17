@@ -1,0 +1,11 @@
+---
+title: "Prima di giudicare la mia vita o il mio carattere"
+date: 2014-09-12T06:07:24.000Z
+---
+
+# Prima di giudicare la mia vita o il mio carattere
+
+<blockquote>
+  <p>Prima di giudicare la mia vita o il mio carattere mettiti le mie scarpe, percorri il cammino che ho percorso io. Vivi il mio dolore, i miei dubbi, le mie risate. Vivi gli anni che ho vissuto io e cadi là dove sono caduto io e rialzati come ho fatto io.</p>
+  <em><em>Luigi Pirandello</em></em>
+</blockquote>

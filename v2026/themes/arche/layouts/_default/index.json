@@ -1,0 +1,7 @@
+{{- $pages := where .Site.RegularPages "Section" "!=" "" -}}
+{{- $items := slice -}}
+{{- range $pages -}}
+  {{- $item := dict "title" .Title "description" (.Description | default "") "date" (.Date.Format "2006-01-02T15:04:05Z07:00") "permalink" .RelPermalink "section" .Section -}}
+  {{- $items = $items | append $item -}}
+{{- end -}}
+{{- $items | jsonify -}}
